@@ -16,10 +16,10 @@ The Training Hub is a dynamic platform designed to connect individuals, help the
 For an interactive experience, check out the live website: https://www.cs.ryerson.ca/~asipahi/WEBSITE%20SPORT/home-page/index.html
   
 ## Features
-- **Custom Graphics: All images and graphics used on the website were created and photoshopped by myself.
-- **Responsive Design: The website is fully responsive, ensuring a seamless experience across different devices and screen sizes.
-- **Database Integration: The server is connected to two different MongoDB databases. Data is inserted into the databases when users fill out a form and click the send button.
-- **Live Deployment: The project is deployed on my university server and is publicly accessible.
+- **Custom Graphics**: All images and graphics used on the website were created and photoshopped by myself.
+- **Responsive Design**: The website is fully responsive, ensuring a seamless experience across different devices and screen sizes.
+- **Database Integration**: The server is connected to two different MongoDB databases. Data is inserted into the databases when users fill out a form and click the send button.
+- **Live Deployment**: The project is deployed on my university server and is publicly accessible.
 - 
 ## Live Experience
 For an interactive experience, check out the live website: The Training Hub
