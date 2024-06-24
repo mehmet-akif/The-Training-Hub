@@ -20,7 +20,7 @@ For an interactive experience, check out the live website: https://www.cs.ryerso
 - **Responsive Design**: The website is fully responsive, ensuring a seamless experience across different devices and screen sizes.
 - **Database Integration**: The server is connected to two different MongoDB databases. Data is inserted into the databases when users fill out a form and click the send button.
 - **Live Deployment**: The project is deployed on my university server and is publicly accessible.
-- 
+  
 ## Live Experience
 For an interactive experience, check out the live website: The Training Hub
 
