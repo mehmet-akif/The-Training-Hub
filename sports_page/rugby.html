@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rugby</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+    body {
+      margin: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    .green-tick {
+      color: green;
+      font-size: 22px !important;
+    }
+
+    .red-x {
+      color: red;
+      font-size: 22px !important;
+    }
+
+    .icon {
+      font-size: 26px !important;
+    }
+
+    .container {
+      line-height: 150%;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+      background-color: #e9e9e9;
+      flex-wrap: wrap;
+    }
+
+    .header h1 {
+      color: #222222;
+      font-size: 30px;
+      font-family: 'Pacifico', cursive;
+    }
+
+    .header .social a {
+      padding: 0 5px;
+      color: #222222;
+    }
+
+    .left {
+      float: left;
+      width: 100%;
+      max-width: 185px;
+      margin: 0;
+      padding: 1em;
+    }
+
+    .left img {
+      width: 100%;
+      height: auto;
+    }
+
+    .content {
+      margin-left: 0;
+      padding: 1em;
+      overflow: hidden;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      display: block;
+      color: #000;
+      padding: 8px 16px;
+      text-decoration: none;
+    }
+
+    nav ul li a.active {
+      background-color: #84e4e2;
+      color: white;
+    }
+
+    nav ul li a:hover:not(.active) {
+      background-color: #29292a;
+      color: white;
+    }
+
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+      margin: 30px 0;
+    }
+
+    td,
+    th {
+      border: 1px solid #dddddd;
+      padding: 8px;
+    }
+
+    tr:nth-child(1) {
+      background-color: #ffffff;
+      color: rgb(0, 0, 0);
+    }
+
+    tr td i.fas {
+      display: block;
+      font-size: 35px;
+      text-align: center;
+    }
+
+    .footer {
+      padding: 55px 20px;
+      background-color: #2e3550;
+      color: white;
+      text-align: center;
+    }
+
+    a:link,
+    a:visited {
+      text-decoration: none;
+      font-size: 16px;
+      font-family: Arial, sans-serif;
+    }
+
+    a:hover,
+    a:active {
+      text-decoration: underline;
+    }
+
+    .plans-table {
+      margin-top: 20px;
+    }
+
+    .plans-table table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .plans-table th,
+    .plans-table td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .plans-table th {
+      background-color: #000000;
+      color: white;
+    }
+
+    .plans-table tbody tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    @media (min-width: 600px) {
+      .content {
+        margin-left: 200px;
+        border-left: 1px solid #d4d4d4;
+      }
+
+      .left {
+        width: 185px;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .header h1 {
+        font-size: 38px;
+      }
+
+      .header,
+      .header nav ul {
+        justify-content: space-between;
+      }
+
+      .plans-table th,
+      .plans-table td {
+        padding: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 style="font-size: 38px;">The Training Hub </h1>
+      <nav>
+        <ul>
+          <li><a href="https://www.cs.ryerson.ca/~asipahi/WEBSITE%20SPORT/home-page/index.html">Home</a></li>
+          <li><a href="https://www.cs.ryerson.ca/~asipahi/WEBSITE%20SPORT/home-page/index.html#service_section">Training Programs</a></li>
+          <li><a href="https://www.cs.ryerson.ca/~asipahi/WEBSITE%20SPORT/coaches_page/coaches.html">Coaches</a></li>
+          <li><a href="https://www.cs.ryerson.ca/~asipahi/WEBSITE%20SPORT/FAQ_page/faq.html">FAQ's</a></li>
+          <li><a href="#https://www.cs.ryerson.ca/~asipahi/WEBSITE%20SPORT/home-page/index.html#info_section">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </header>
+    <aside class="left">
+      <img src="./sports_page_images/doncarter.jpeg" width="185px" />
+      <br><br>
+      <p>"Success is not achieved by accident. It is achieved by dedication, hard work, and a passion to be the best."<br>- Dan Carter</p>
+    </aside>
+    <main class="content">
+      <h2>Discover the Ultimate Rugby Experience</h2>
+      <p>Are you passionate about rugby and dreaming of a professional career? Our rugby course, led by the legendary coach David Thompson, is your gateway to achieving excellence on the field. Join us for an unparalleled training journey designed to elevate your skills and unlock your full potential.</p>
+      <h3>Why Choose Our Program?</h3>
+      <ul>
+        ➤<strong> Elite Coaching:</strong> Learn from David Thompson, a celebrated coach with a proven track record of success in the rugby world. To learn more,<a href="C:\Users\makif\Desktop\website spor\coaches_page\coaches.html"> click here.</a><br>
+        ➤<strong> Customized Training:</strong> Benefit from a meticulously structured program tailored to your unique skill level and development needs.<br>
+        ➤<strong> Networking Opportunities:</strong> Connect with like-minded players and build valuable relationships that can propel your rugby career forward.<br>
+        ➤<strong> Career Pathways:</strong> Gain exposure and opportunities that could pave the way to a future in professional rugby.<br>
+      </ul>
+      <table>
+        <tr>
+          <th>SKILL 1</th>
+          <th>SKILL 2</th>
+          <th>SKILL 3</th>
+        </tr>
+        <tr>
+          <td style="text-align: center;"><i class="fa-solid fa-user-plus" style="font-size: 24px;"></i></td>
+          <td style="text-align: center;"><i class="fa-solid fa-football" style="font-size: 24px;"></i></td>
+          <td style="text-align: center;"><i class="fa-solid fa-user-tie" style="font-size: 24px;"></i></td>
+        </tr>
+        <tr>
+          <td>Meet with other people and socialize</td>
+          <td>Improve yourself in rugby, and gain a new hobby</td>
+          <td>Take the first serious steps in your future professional career</td>
+        </tr>
+      </table>
+      <h3>Available Plans</h3>
+      <div class="plans-table">
+        <table>
+          <thead>
+            <tr>
+              <th>INCLUDES </th>
+              <th style="text-align: center;">BASIC PLAN <br> $45/month</th>
+              <th style="text-align: center;">ADVANCED PLAN <br> $75/month</th>
+              <th style="text-align: center;">PREMIUM PLAN <br> $100/month</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Weekly Group Training Sessions</td>
+              <td><i class="fas fa-check green-tick"></i></td>
+              <td><i class="fas fa-check green-tick"></i></td>
+              <td><i class="fas fa-check green-tick"></i></td>
+            </tr>
+            <tr>
+              <td>Access to Training Facilities</td>
+              <td><i class="fas fa-check green-tick"></i></td>
+              <td><i class="fas fa-check green-tick"></i></td>
+              <td><i class="fas fa-check green-tick"></i></td>
+
+            </tr>
+
+            <tr>
+              <td>Basic Skill Development</td>
+              <td><i class="fas fa-check green-tick"></i></td>
+              <td><i class="fas fa-check green-tick"></i></td>
+              <td><i class="fas fa-check green-tick"></i></td>
+
+            </tr>
+
+
+
+            <tr>
+                <td>Fitness and Conditioning</td>
+                <td><i class="fas fa-times red-x"></i></td>
+                <td><i class="fas fa-check green-tick"></i></td>
+                <td><i class="fas fa-check green-tick"></i></td>
+            </tr>    
+
+            <tr>
+                <td>Progress Tracking</td>
+                <td><i class="fas fa-times red-x"></i></td>
+                <td><i class="fas fa-check green-tick"></i></td>
+                <td><i class="fas fa-check green-tick"></i></td>
+            </tr>  
+
+            <tr>
+                <td>Club Events</td>
+                <td><i class="fas fa-times red-x"></i></td>
+                <td><i class="fas fa-check green-tick"></i></td>
+                <td><i class="fas fa-check green-tick"></i></td>
+            </tr>  
+
+
+
+            <tr>
+                <td>One-on-One Coaching</td>
+                <td><i class="fas fa-times red-x"></i></td>
+                <td><i class="fas fa-times red-x"></i></td>
+                <td><i class="fas fa-check green-tick"></i></td>
+            </tr> 
+
+            <tr>
+                <td>Comprehensive Video Analysis</td>
+                <td><i class="fas fa-times red-x"></i></td>
+                <td><i class="fas fa-times red-x"></i></td>
+                <td><i class="fas fa-check green-tick"></i></td>
+            </tr> 
+
+            <tr>
+                <td>Physiotherapy Sessions</td>
+                <td><i class="fas fa-times red-x"></i></td>
+                <td><i class="fas fa-times red-x"></i></td>
+                <td><i class="fas fa-check green-tick"></i></td>
+            </tr> 
+
+          </tbody>
+        </table>
+      </div>
+      
+
+      <p><b><a href="https://www.cs.ryerson.ca/~asipahi/WEBSITE%20SPORT/register_page/register.html" target="_blank" style="color: rgb(0, 102, 255);"> REGISTER HERE ></a></b></p>
+    </main>
+    <footer class="footer">&copy; 2024 All Rights Reserved By Mehmet Akif Sipahi</footer>
+  </div>
+</body>
+
+</html>
